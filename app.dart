@@ -1,7 +1,7 @@
 class Llama{
 
   Future<String> getResponse(String prompt) async {
-    final url = Uri.parse('http://192.168.1.2:5000/api');  // Replace with your machine's IP address
+    final url = Uri.parse('http://<Ip-Address>:5000/api');  // Replace with your machine's IP address
     final headers = {'Content-Type': 'application/json'};
     final body = jsonEncode({
       "prompt": prompt
